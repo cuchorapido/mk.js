@@ -13,8 +13,11 @@ The `Network` mode with `Web RTC Data Channel Demo` [here](http://ptpgamedemo.ap
 
 For the network game you need to install the server:
 
-    git clone git@github.com:mgechev/mk.js
+    git clone https://github.com/cuchorapido/mk.js.git
     cd mk.js/server
+    * abrir powershell con permiso de administrador
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    choco install -y nodejs  --version=18.9.0
     npm install
     node server.js
 
